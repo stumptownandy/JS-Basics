@@ -10,11 +10,23 @@ var outer = function(){
 //Invoke outer saving the return value into another variable called 'inner'.
 
   //Code Here
+var outer = function(){
+  var name = 'Tyler';
+  return function(){
+    return 'The original name was ' + name;
+  }
+}
+return makeFullName ();
+} 
+​
+showName ("Michael", "Jackson");
+
+
+
 
 //Once you do that, invoke inner.
 
   //Code Here
-
 
 
 //Next problem
@@ -45,11 +57,16 @@ var callFriend = function(){
 */
 
   //Code Here
-  var count = makeCounter();
-  count() // 1
-  count() // 2
-  count() // 3
-  count() // 4
+  var count = makeCounter ();
+  funciton makeCounter () {
+  var numba = 0;
+  numba ++;
+  function () {
+  return numba;
+   } 
+
+
+
 
 
 
